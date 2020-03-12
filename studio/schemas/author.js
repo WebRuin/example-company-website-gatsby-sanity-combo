@@ -1,11 +1,7 @@
-import { MdPerson } from 'react-icons/md'
-
 export default {
-  name: 'person',
-  title: 'Person',
+  name: 'author',
+  title: 'Author',
   type: 'document',
-  icon: MdPerson,
-  liveEdit: false,
   fields: [
     {
       name: 'name',
@@ -16,7 +12,6 @@ export default {
       name: 'slug',
       title: 'Slug',
       type: 'slug',
-      description: 'Some frontend will require a slug to be set to be able to show the person',
       options: {
         source: 'name',
         maxLength: 96
@@ -38,7 +33,7 @@ export default {
         {
           title: 'Block',
           type: 'block',
-          styles: [{ title: 'Normal', value: 'normal' }],
+          styles: [{title: 'Normal', value: 'normal'}],
           lists: []
         }
       ]
